@@ -36,4 +36,4 @@ class TestCreateBooking(object):
         # 500 == 500
         verfiy_http_status_cod(response, 500)
 
-        pass
+

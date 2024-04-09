@@ -15,14 +15,14 @@ class Util(object):
         }
         return headers
 
-    def common_header_put__patch_delete_basic_auth(basic_auth_value):
+    def common_header_put_patch_delete_basic_auth(basic_auth_value):
         headers = {
             "Content-Type": "application/xml",
             "Authorization": "BasicAuth" + str(basic_auth_value),
         }
         return headers
 
-    def common_header_put_delete_patch_cookie(token):
+    def common_header_put_delete_patch_cookie(self, token):
         headers = {
             "Content-Type": "application/xml",
             "Cookie": "token=" + str(token),
